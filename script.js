@@ -30,10 +30,11 @@ function newElement() {
     document.getElementById("myInput").value = "";
 
     var span = document.createElement("SPAN");
-    var txt = document.createTextNode("\u00D7");
+    //this class is created for close button 
     span.className = "close";
+    //span child element for stop watch
     span.id = "display"
-    span.appendChild(txt);
+        //by default stop watch is set to "00:00:00"
     span.innerHTML = "00:00:00"
     li.appendChild(span);
 
